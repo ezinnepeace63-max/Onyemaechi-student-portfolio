@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="An interactive academic task planner." name="description"/>
+  <title>
+   Academic Planner | Onyemaechi Ezinne Peace
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/main.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <a class="brand" href="index.html">
+    <span class="brand-mark">
+     P
+    </span>
+    <span>
+     Peace
+     <span class="brand-dot">
+      .
+     </span>
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">
+    ☰
+   </button>
+   <nav aria-label="Main navigation" class="nav-links">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="about.html">
+     About
+    </a>
+    <a href="projects.html">
+     Projects
+    </a>
+    <a class="active" href="planner.html">
+     Planner
+    </a>
+    <a class="nav-cta" href="contact.html">
+     Contact me
+     <span>
+      &nearrow;
+     </span>
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section class="page-hero section-wrap">
+    <p class="eyebrow">
+     MAKE SPACE FOR PROGRESS
+    </p>
+    <h1>
+     Your academic
+     <br/>
+     <span class="gradient-text">
+      planner.
+     </span>
+    </h1>
+    <p class="page-lead">
+     Capture the next step, keep track of your tasks and celebrate each completed milestone.
+    </p>
+   </section>
+   <section class="section-wrap planner-wrap">
+    <div class="planner-panel">
+     <div class="planner-top">
+      <div>
+       <p class="eyebrow">
+        MY TASK BOARD
+       </p>
+       <h2>
+        One step at a time.
+       </h2>
+       <p class="muted">
+        Your tasks are saved in this browser on this device.
+       </p>
+      </div>
+      <div class="task-count">
+       <strong id="task-total">
+        0
+       </strong>
+       <span>
+        tasks
+       </span>
+      </div>
+     </div>
+     <form class="task-form" id="task-form">
+      <label class="sr-only" for="task-input">
+       New task
+      </label>
+      <input id="task-input" maxlength="100" placeholder="e.g. Review HTML semantic elements" required="" type="text"/>
+      <label class="sr-only" for="task-date">
+       Due date
+      </label>
+      <input aria-label="Task due date" id="task-date" type="date"/>
+      <button class="button button-primary" type="submit">
+       Add task
+       <span>
+        ＋
+       </span>
+      </button>
+     </form>
+     <div class="task-toolbar">
+      <div aria-label="Filter tasks" class="filter-tabs" role="group">
+       <button class="filter-btn active" data-filter="all" type="button">
+        All
+       </button>
+       <button class="filter-btn" data-filter="active" type="button">
+        To do
+       </button>
+       <button class="filter-btn" data-filter="completed" type="button">
+        Completed
+       </button>
+      </div>
+      <button class="subtle-button" id="clear-completed" type="button">
+       Clear completed
+      </button>
+     </div>
+     <ul aria-live="polite" class="task-list" id="task-list">
+     </ul>
+     <p class="empty-state" id="empty-state">
+      Your list is clear. Add a task to get started ✦
+     </p>
+     <div class="progress-area">
+      <div class="progress-label">
+       <span>
+        Progress
+       </span>
+       <strong id="progress-text">
+        0% complete
+       </strong>
+      </div>
+      <div class="progress-track">
+       <span id="progress-bar">
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="section-wrap footer-inner">
+    <a class="brand" href="index.html">
+     <span class="brand-mark">
+      P
+     </span>
+     <span>
+      Peace
+      <span class="brand-dot">
+       .
+      </span>
+     </span>
+    </a>
+    <p>
+     Designed with curiosity by Onyemaechi Ezinne Peace.
+    </p>
+    <span>
+     &copy;
+     <span data-year="">
+     </span>
+     &middot; Student Portfolio
+    </span>
+   </div>
+  </footer>
+ </body>
+</html>
+
